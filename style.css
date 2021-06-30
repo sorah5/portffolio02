@@ -166,6 +166,7 @@
     }
     .about_cont .txt_box{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
     .about_cont .txt_box .left{
@@ -424,8 +425,27 @@
         }
 
 
+ /* -----------태블릿 반응형----------- */
+    @media screen and (max-width: 1024px) {
+        .about_cont{
+            height: 1300px;
+        }
+        .about_cont .txt_box{
+            display: block;
+            text-align: center;
+        }
+        .about_cont .txt_box .left{
+
+        }
+        .about_cont .txt_box .right{
+            width: 100%;
+        }
 
 
+        .skill_cont .txt_box img {
+            margin-right: 20px;
+        }
+    }
 
 
 
