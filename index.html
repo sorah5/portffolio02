@@ -163,10 +163,10 @@
     /*윈도우 스크롤 작동시 이벤트 발생*/
     $(window).scroll(function(){
         var sct = $(this).scrollTop();
-
+        var windowWidth = window.outerWidth;
         $('.right>p').each(function(){
             var post = $(this).offset().top - 620;
-            if(sct >= post){
+            if(sct >= post && windowWidth >=768){
                 $(this).addClass('animate__lightSpeedInRight');
             }else{
                 $(this).removeClass('animate__lightSpeedInRight');
@@ -186,6 +186,9 @@
             }
         });
     });
+  
+    
+
 
     
 
