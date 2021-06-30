@@ -155,7 +155,7 @@
      /* ------------어바웃미---------- */
 
     .about_cont{
-        height: 870px;
+        height: 50%;
         padding: 100px 100px;
         background-color: #ffeef0;
     }
@@ -441,6 +441,14 @@
             width: 100%;
         }
 
+        .about_cont .txt_box .right p:nth-child(2){
+            margin-left: 0;
+           
+        }
+        .about_cont .txt_box .right p:nth-child(3){
+            margin-left:0;
+          
+        }
 
         .skill_cont .txt_box img {
             margin-right: 20px;
