@@ -504,8 +504,8 @@
             transform: translateY(-50%);
         }
         .skill_cont .txt_box:last-child img{
-            width: 90px;
-            height: 90px;
+            width: 80px;
+            height: 80px;
         }
         .skill_cont .txt_box:last-child{
             width: 100%;
@@ -515,7 +515,7 @@
             width: 100%;
             margin-left: 5px;
             font-size: 17px;
-            line-height: 77px;
+            line-height: 24px;
         }
 
 
