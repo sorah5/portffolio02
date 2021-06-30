@@ -326,9 +326,9 @@
 
        /* ------------works---------- */
        .works_cont{
-            height: 600px;
+            height: 1000px;
             padding: 100px;
-            background-color: #f7f4ea ;
+            background-color: #fff ;
             text-align: left;
         }
         .works_cont h1{
@@ -338,6 +338,67 @@
         }
       
  
+
+        .work__projects{
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: center;
+        }
+        .project{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 280px;
+            height: 250px;
+            margin: 2px;
+            background-color: #fff;
+           
+        }
+        .project__img{
+            max-width: 100%;
+            max-height:100%;
+            align-self: center;
+        }
+        .project__description{
+            position: absolute;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.2s ease-in;
+        }
+        .project:hover .project__description{
+            opacity: 0.8;
+            transform: translateY(0);
+        }
+        .project__description h3{
+            text-align: center;
+            color: #fff;
+        }
+        .project__description h3:after{
+            content: '';
+            display: block;
+            position: relative;
+            left: 50%;
+            width: 50px;
+            height: 2px;
+            transform: translateX(-25%);
+            margin-left: -12px;
+            margin-top: 8px;
+            background-color: #fff;
+        }
+        .project__description span{
+            margin-top: 10px;
+            color: #fff;
+            text-align: center;
+        }
 
       /* ------------contact---------- */
         .contact_cont{
